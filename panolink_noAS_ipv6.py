@@ -2,7 +2,6 @@ import logging
 from pathlib import Path
 from uuid import uuid4
 
-from pycaracal import prober,Probe
 from pych_client import ClickHouseClient
 from diamond_miner.format import format_ipv6
 
@@ -25,6 +24,7 @@ from diamond_miner.router_MDA import router_MDA
 import argparse
 import time
 import gc
+import subprocess
 # gc.set_debug(gc.DEBUG_LEAK)
 # Configuration
 credentials = {
@@ -38,7 +38,7 @@ probes_filepath = Path("probes.csv.zst")
 results_filepath = Path("results.csv")
 #bgp_filepath = Path("/home/hongyu/routeviews-rv2-20230317-1200.pfx2as")
 bgp_filepath = Path("routeviews_AS")
-
+caracal_path = "/root/caracal/build/caracal"
 
 # ICMP traceroute towards every /24 in 1.0.0.0/22 starting with 6 flows per prefix between TTLs 2-32
 parser = argparse.ArgumentParser(description='Run panolink.py with a target prefix.')
@@ -120,11 +120,13 @@ if __name__ == "__main__":
                 break
 
             # Send the probes
-            config = prober.Config()
-            config.set_output_file_csv(get_result_path(results_filepath, round_))
-            config.set_probing_rate(100_000)
-            config.set_sniffer_wait_time(2)
-            prober.probe(config, str(probes_filepath))
+            # config = prober.Config()
+            # config.set_output_file_csv(get_result_path(results_filepath, round_))
+            # config.set_probing_rate(100_000)
+            # config.set_sniffer_wait_time(2)
+            cmd = f"zstd -T8 -dc {str(probes_filepath)} | {caracal_path} -r 100000 --sniffer-wait-time 2  > {get_result_path(results_filepath, round_)}"
+            process = subprocess.run(cmd, shell=True, check=True)
+            #prober.probe(config, str(probes_filepath))
 
         
         links = GetLinks().execute(client, measurement_id)
