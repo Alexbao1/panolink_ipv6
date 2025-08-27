@@ -1,0 +1,80 @@
+==> 2024-03-25 11:18:59 <==
+# cmd: /root/anaconda3/bin/conda create -n panolink python=3.9
+# conda version: 24.1.2
++defaults/linux-64::_libgcc_mutex-0.1-main
++defaults/linux-64::_openmp_mutex-5.1-1_gnu
++defaults/linux-64::ca-certificates-2024.3.11-h06a4308_0
++defaults/linux-64::ld_impl_linux-64-2.38-h1181459_1
++defaults/linux-64::libffi-3.4.4-h6a678d5_0
++defaults/linux-64::libgcc-ng-11.2.0-h1234567_1
++defaults/linux-64::libgomp-11.2.0-h1234567_1
++defaults/linux-64::libstdcxx-ng-11.2.0-h1234567_1
++defaults/linux-64::ncurses-6.4-h6a678d5_0
++defaults/linux-64::openssl-3.0.13-h7f8727e_0
++defaults/linux-64::pip-23.3.1-py39h06a4308_0
++defaults/linux-64::python-3.9.19-h955ad1f_0
++defaults/linux-64::readline-8.2-h5eee18b_0
++defaults/linux-64::setuptools-68.2.2-py39h06a4308_0
++defaults/linux-64::sqlite-3.41.2-h5eee18b_0
++defaults/linux-64::tk-8.6.12-h1ccaba5_0
++defaults/linux-64::wheel-0.41.2-py39h06a4308_0
++defaults/linux-64::xz-5.4.6-h5eee18b_0
++defaults/linux-64::zlib-1.2.13-h5eee18b_0
++defaults/noarch::tzdata-2024a-h04d1e81_0
+# update specs: ['python=3.9']
+==> 2024-10-05 13:29:49 <==
+# cmd: /root/anaconda3/condabin/conda install -c conda-forge --name panolink_noAS ipykernel -y
+# conda version: 24.1.2
+-defaults/linux-64::_libgcc_mutex-0.1-main
+-defaults/linux-64::_openmp_mutex-5.1-1_gnu
+-defaults/linux-64::ca-certificates-2024.3.11-h06a4308_0
+-defaults/linux-64::libgcc-ng-11.2.0-h1234567_1
+-defaults/linux-64::libgomp-11.2.0-h1234567_1
+-defaults/linux-64::openssl-3.0.13-h7f8727e_0
++conda-forge/linux-64::_libgcc_mutex-0.1-conda_forge
++conda-forge/linux-64::_openmp_mutex-4.5-2_gnu
++conda-forge/linux-64::ca-certificates-2024.8.30-hbcca054_0
++conda-forge/linux-64::debugpy-1.8.6-py39hf88036b_0
++conda-forge/linux-64::libgcc-14.1.0-h77fa898_1
++conda-forge/linux-64::libgcc-ng-14.1.0-h69a702a_1
++conda-forge/linux-64::libgomp-14.1.0-h77fa898_1
++conda-forge/linux-64::libsodium-1.0.20-h4ab18f5_0
++conda-forge/linux-64::libstdcxx-14.1.0-hc0a3c3a_1
++conda-forge/linux-64::openssl-3.3.2-hb9d3cd8_0
++conda-forge/linux-64::psutil-6.0.0-py39h8cd3c5a_1
++conda-forge/linux-64::python_abi-3.9-2_cp39
++conda-forge/linux-64::pyzmq-26.2.0-py39h4e4fb57_2
++conda-forge/linux-64::tornado-6.4.1-py39h8cd3c5a_1
++conda-forge/linux-64::zeromq-4.3.5-ha4adb4c_5
++conda-forge/noarch::asttokens-2.4.1-pyhd8ed1ab_0
++conda-forge/noarch::comm-0.2.2-pyhd8ed1ab_0
++conda-forge/noarch::decorator-5.1.1-pyhd8ed1ab_0
++conda-forge/noarch::exceptiongroup-1.2.2-pyhd8ed1ab_0
++conda-forge/noarch::executing-2.1.0-pyhd8ed1ab_0
++conda-forge/noarch::importlib-metadata-8.5.0-pyha770c72_0
++conda-forge/noarch::ipykernel-6.29.5-pyh3099207_0
++conda-forge/noarch::ipython-8.18.1-pyh707e725_3
++conda-forge/noarch::jedi-0.19.1-pyhd8ed1ab_0
++conda-forge/noarch::jupyter_client-8.6.3-pyhd8ed1ab_0
++conda-forge/noarch::jupyter_core-5.7.2-pyh31011fe_1
++conda-forge/noarch::matplotlib-inline-0.1.7-pyhd8ed1ab_0
++conda-forge/noarch::nest-asyncio-1.6.0-pyhd8ed1ab_0
++conda-forge/noarch::packaging-24.1-pyhd8ed1ab_0
++conda-forge/noarch::parso-0.8.4-pyhd8ed1ab_0
++conda-forge/noarch::pexpect-4.9.0-pyhd8ed1ab_0
++conda-forge/noarch::pickleshare-0.7.5-py_1003
++conda-forge/noarch::platformdirs-4.3.6-pyhd8ed1ab_0
++conda-forge/noarch::prompt-toolkit-3.0.48-pyha770c72_0
++conda-forge/noarch::ptyprocess-0.7.0-pyhd3deb0d_0
++conda-forge/noarch::pure_eval-0.2.3-pyhd8ed1ab_0
++conda-forge/noarch::pygments-2.18.0-pyhd8ed1ab_0
++conda-forge/noarch::python-dateutil-2.9.0-pyhd8ed1ab_0
++conda-forge/noarch::six-1.16.0-pyh6c4a22f_0
++conda-forge/noarch::stack_data-0.6.2-pyhd8ed1ab_0
++conda-forge/noarch::traitlets-5.14.3-pyhd8ed1ab_0
++conda-forge/noarch::typing_extensions-4.12.2-pyha770c72_0
++conda-forge/noarch::wcwidth-0.2.13-pyhd8ed1ab_0
++conda-forge/noarch::zipp-3.20.2-pyhd8ed1ab_0
++defaults/linux-64::krb5-1.21.3-h143b758_0
++defaults/linux-64::libedit-3.1.20230828-h5eee18b_0
+# update specs: ['ipykernel']

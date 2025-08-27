@@ -1,0 +1,3 @@
+[console_scripts]
+pych-client=pych_client.cli:main
+

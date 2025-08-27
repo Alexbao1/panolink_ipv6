@@ -1,0 +1,13 @@
+prefix=/root/anaconda3/envs/panolink
+exec_prefix=/root/anaconda3/envs/panolink
+libdir=/root/anaconda3/envs/panolink/lib
+sharedlibdir=/root/anaconda3/envs/panolink/lib
+includedir=/root/anaconda3/envs/panolink/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
